@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 
+const MONGO_URL = "mongodb+srv://admin:admin@cluster0.2hlyo.mongodb.net/Library_App?retryWrites=true&w=majority";
 module.exports = {
 	connection: mongoose
-		.connect(process.env.MONGO_URL, {
+		.connect(MONGO_URL, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 		})
