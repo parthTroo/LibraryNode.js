@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT || 8080;
+const PORT =  8000;
 
 require("./dbconfig");
 app.use("/", require("./server/routes/router"));
